@@ -26,8 +26,12 @@ public class APIController {
 
 	@GetMapping("/api/begin")
 	public Question getFirstQuestion() {
+		int index = 1;
+		if (service.getAllQuestions().stream().findFirst().filter(q -> q.getId() == index).isPresent()) {
+			return service.getAllQuestions().stream().findFirst().filter(q -> q.getId() == index).get();
+		}
 
-		return service.getAllQuestions().get(0);
+		return new Question();
 	}
 
 	@PostMapping("/api/answer")
