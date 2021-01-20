@@ -4,10 +4,10 @@
 2. $docker build -t [name:tag] .
 3. $docker run -p8080:8080 -d [name:tag]
 
-##Run And Access API
+## Run And Access API
 Access API from localhost:8080 \
 /GET /api/begin \
-/POST /api/answer \
+/POST /api/answer 
 
 ## Build Spec
 1. OpenJDK Java 8
