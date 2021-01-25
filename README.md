@@ -1,8 +1,8 @@
 # Tree Match API
 ## Docker Build 
 1. go to project level where the Dockerfile resides 
-2. $docker build -t [name:tag] .
-3. $docker run -p8080:8080 -d [name:tag]
+2. $docker build -t treematch:1.0 .
+3. $docker run -p8080:8080 -d treematch:1.0
 
 ## Run And Access API
 Access API from localhost:8080 \
